@@ -1,44 +1,89 @@
 # SweetDialoger
+	
+SweetDialoger makes dialogs to get rid of writing massy codes again and again.
 
+## Prerequisites
 
-1)
- compileOptions {
+Add this in your module `build.gradle` file between android tags (**not** your root `build.gradle` file):
+
+```gradle
+compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+```
 
-2) implements DialogButtonListener
+## Dependency
 
-3)
-public class MainActivity extends AppCompatActivity implements DialogButtonListener , View.OnClickListener {
+Add this to your module's `build.gradle` file (make sure the version matches the JitPack badge above):
+
+```gradle
+dependencies {
+	...
+	 implementation 'com.github.hamurcuabi:SweetDialoger:-SNAPSHOT'
+}
+```
+## Usage
+This following basic methodes have default variables. First add this to your Activity
+
+public class MainActivity extends AppCompatActivity **implements DialogButtonListener** , View.OnClickListener
 
 
-    public  void Succes(View v) {
-       DialogCreater.succesDialog(this);
-    }
+To display basic success Dialog:
 
-    public void Error(View v) {
-        DialogCreater.errorDialog(this, "Error Message");
-    }
+``` java
+DialogCreater.succesDialog(this);
+```
+To display basic error Dialog:
 
-    public void Warning(View v) {
-        DialogCreater.warningDialog(this, "Warning Message");
-    }
+``` java
+ DialogCreater.errorDialog(this, "Error Message");
+```
+To display basic info Dialog:
 
-    public void Basic(View v) {
-        DialogCreater.basicDialog(this, "Title", "Basic Content");
-    }
+``` java
+DialogCreater.basicDialog(this, "Title", "Basic Content");
+```
+To display basic warning Dialog:
 
-    public void Question(View v) {
-        DialogCreater.questionDialog(this, this, "Question ?", 1);
-    }
+``` java
+DialogCreater.warningDialog(this, "Warning Message");
+```
 
-    public void Loading(View v) {
-        DialogCreater.loadingDialog(this);
-    }
+To display basic question Dialog:
 
-    public void Done() {
+``` java
+DialogCreater.questionDialog(this, this, "Question ?", 1);
+```
+To display basic loading Dialog:
+
+``` java
+DialogCreater.loadingDialog(this);
+```
+To display basic done Dialog:
+
+``` java
+DialogCreater.doneDialog(this);
+```
+To display basic fail Dialog:
+
+``` java
+DialogCreater.failDialog(this);
+```
+To display basic changeDone Dialog:
+
+``` java
+DialogCreater.changeDoneDialog(this, "Question");
+```
+To display basic changeFailDialog:
+
+``` java
+DialogCreater.changeFailDialog(this, "Question");
+```
+Done and Fail Dialog methodes:
+``` java
+ public void Done() {
         DialogCreater.doneDialog(this);
     }
 
@@ -46,15 +91,11 @@ public class MainActivity extends AppCompatActivity implements DialogButtonListe
         DialogCreater.failDialog(this);
     }
 
-    public void ChangeDone(View v) {
-        DialogCreater.changeDoneDialog(this, "Question");
-    }
+```
 
-    public void ChangeFail(View v) {
-        DialogCreater.changeFailDialog(this, "Question");
-    }
 
-    @Override
+``` java
+@Override
     public void onConfirmButton(int id) {
         switch (id) {
             case 1:
@@ -71,14 +112,6 @@ public class MainActivity extends AppCompatActivity implements DialogButtonListe
                 break;
         }
     }
+```
 
-    @Override
-    public void onClick(View v) {
 
-        switch (v.getId()){
-
-            case R.id.btnDone:Done();break;
-            case R.id.btnFail:Fail();break;
-        }
-    }
-}
