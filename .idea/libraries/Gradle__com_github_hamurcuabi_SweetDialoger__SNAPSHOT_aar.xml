@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.hamurcuabi:SweetDialoger:-SNAPSHOT@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c631f1a8a3d3f3d3611d693cb47a5591/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c631f1a8a3d3f3d3611d693cb47a5591/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3232832bfbd87b9b9c936cbf0f262261/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3232832bfbd87b9b9c936cbf0f262261/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.hamurcuabi/SweetDialoger/-SNAPSHOT/bd9d3fbd34f6b906cdc020fbfd9c3974794e6c77/SweetDialoger--SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.hamurcuabi/SweetDialoger/-SNAPSHOT/a4f411b151f357cab36e508efa910a8edc2c6410/SweetDialoger--SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
