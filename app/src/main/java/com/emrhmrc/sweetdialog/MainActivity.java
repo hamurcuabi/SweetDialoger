@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements DialogButtonListe
     }
 
     public void ChangeDone(View v) {
-        DialogCreater.changeDoneDialog(this, "Question");
+        DialogCreater.changeFailOrDoneDialog(this, "Question");
     }
 
     public void ChangeFail(View v) {
