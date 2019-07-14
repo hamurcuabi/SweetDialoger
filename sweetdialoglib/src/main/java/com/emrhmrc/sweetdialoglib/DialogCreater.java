@@ -167,4 +167,26 @@ public class DialogCreater {
                         .changeAlertType(SweetAlertDialog.ERROR_TYPE))
                 .show();
     }
+    public static void changeFailOrDoneDialog(Activity activity, String question) {
+        new SweetAlertDialog(activity, SweetAlertDialog.WARNING_TYPE)
+                .setTitleText(SURE)
+                .setContentText(question)
+                .setConfirmText(YES)
+                .setCancelText(NO)
+                .setCancelClickListener(sDialog -> sDialog
+                        .setTitleText(INFO)
+                        .setContentText(FAIL)
+                        .setConfirmText(OK)
+                        .showCancelButton(false)
+                        .setConfirmClickListener(null)
+                        .changeAlertType(SweetAlertDialog.ERROR_TYPE))
+                .setConfirmClickListener(sDialog -> sDialog
+                        .setTitleText(INFO)
+                        .setContentText(SUCCES)
+                        .setConfirmText(OK)
+                        .showCancelButton(false)
+                        .setConfirmClickListener(null)
+                        .changeAlertType(SweetAlertDialog.SUCCESS_TYPE))
+                .show();
+    }
 }
