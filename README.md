@@ -93,7 +93,7 @@ Done and Fail Dialog methodes:
 
 ```
 
-
+This methodes will override after implemeting DialogbuttonListener
 ``` java
 @Override
     public void onConfirmButton(int id) {
