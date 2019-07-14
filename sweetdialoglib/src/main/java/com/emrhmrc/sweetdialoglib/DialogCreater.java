@@ -158,12 +158,12 @@ public class DialogCreater {
                 .setContentText(question)
                 .setConfirmText(YES)
                 .setCancelText(NO)
-                .setConfirmClickListener(sDialog -> sDialog
+                .setCancelClickListener(sDialog -> sDialog
                         .setTitleText(INFO)
                         .setContentText(FAIL)
                         .setConfirmText(OK)
                         .showCancelButton(false)
-                        .setCancelClickListener(null)
+                        .setConfirmClickListener(null)
                         .changeAlertType(SweetAlertDialog.ERROR_TYPE))
                 .show();
     }
