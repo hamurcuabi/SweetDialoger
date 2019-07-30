@@ -14,6 +14,18 @@ compileOptions {
 
 ```
 
+Add this in your module `build.gradle`(Project):
+
+```repositories
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+
 ## Dependency
 
 Add this to your module's `build.gradle` file (make sure the version matches the JitPack badge above):
@@ -113,5 +125,8 @@ This methodes will override after implemeting DialogbuttonListener
         }
     }
 ```
+# How it looks ?
+
+https://www.youtube.com/watch?v=2ELGcCKs7wI&list=PL9Io9mCNXkmP49oi-35zMkHhlvTNOJB8b
 
 
