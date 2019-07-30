@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.hamurcuabi:SweetDialoger:2.3.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6def8d2a1be5c15c72bf80fe40bc68a/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6def8d2a1be5c15c72bf80fe40bc68a/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.hamurcuabi/SweetDialoger/2.3.0/bfb3c7a00385c5ad4d3350d33491a06cf8f0fa2e/SweetDialoger-2.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
