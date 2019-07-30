@@ -1,4 +1,4 @@
-#Tue Jul 30 13:41:35 EET 2019
+#Tue Jul 30 13:55:50 EET 2019
 base.0=D\:\\AndroidApplications\\SweetDialog\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.1=classes.dex
 renamed.1=classes2.dex
