@@ -101,6 +101,7 @@ public class DialogCreater {
         pDialog.setCancelClickListener(sDialog -> {
             //Dont do it
             sDialog.dismissWithAnimation();
+            //
         });
         pDialog.show();
         return pDialog;
