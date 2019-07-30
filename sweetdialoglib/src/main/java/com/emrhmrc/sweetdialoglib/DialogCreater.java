@@ -97,6 +97,11 @@ public class DialogCreater {
         pDialog.getProgressHelper().setBarColor(Color.parseColor(LOADING_COLOR));
         pDialog.setTitleText(loadingText);
         pDialog.setCancelable(cancelable);
+        pDialog.showCancelButton(cancelable);
+        pDialog.setCancelClickListener(sDialog -> {
+            //Dont do it
+            sDialog.dismissWithAnimation();
+        });
         pDialog.show();
         return pDialog;
     }
@@ -116,6 +121,11 @@ public class DialogCreater {
         pDialog.getProgressHelper().setBarColor(Color.parseColor(LOADING_COLOR));
         pDialog.setTitleText(LOADING);
         pDialog.setCancelable(cancelable);
+        pDialog.showCancelButton(cancelable);
+        pDialog.setCancelClickListener(sDialog -> {
+            //Dont do it
+            sDialog.dismissWithAnimation();
+        });
         pDialog.show();
         return pDialog;
     }

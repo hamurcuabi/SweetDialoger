@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements DialogButtonListe
     }
 
     public void Loading(View v) {
-        SweetAlertDialog loadingDialog = DialogCreater.loadingDialog(this);
+        SweetAlertDialog loadingDialog = DialogCreater.loadingDialog(this,true);
         Handler handler = new Handler(Looper.getMainLooper());
         handler.postDelayed(new Runnable() {
             @Override
