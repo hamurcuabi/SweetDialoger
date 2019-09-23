@@ -34,7 +34,12 @@ public class DialogCreater {
                 .setContentText(content)
                 .show();
     }
-
+    public static void errorDialog(Activity activity,  String title,String content) {
+        new SweetAlertDialog(activity, SweetAlertDialog.ERROR_TYPE)
+                .setTitleText(title)
+                .setContentText(content)
+                .show();
+    }
     public static void warningDialog(Activity activity, String content) {
         new SweetAlertDialog(activity, SweetAlertDialog.WARNING_TYPE)
                 .setTitleText(INFO)
@@ -91,6 +96,7 @@ public class DialogCreater {
         pDialog.show();
         return pDialog;
     }
+
     public static SweetAlertDialog loadingDialog(Activity activity, String loadingText,boolean cancelable) {
 
         SweetAlertDialog pDialog = new SweetAlertDialog(activity, SweetAlertDialog.PROGRESS_TYPE);
@@ -116,6 +122,7 @@ public class DialogCreater {
         pDialog.show();
         return pDialog;
     }
+
     public static SweetAlertDialog loadingDialog(Activity activity,boolean cancelable) {
 
         SweetAlertDialog pDialog = new SweetAlertDialog(activity, SweetAlertDialog.PROGRESS_TYPE);
@@ -178,6 +185,7 @@ public class DialogCreater {
                         .changeAlertType(SweetAlertDialog.ERROR_TYPE))
                 .show();
     }
+
     public static void changeFailOrDoneDialog(Activity activity, String question) {
         new SweetAlertDialog(activity, SweetAlertDialog.WARNING_TYPE)
                 .setTitleText(SURE)
