@@ -1,17 +1,16 @@
 package com.emrhmrc.sweetdialog;
 
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.emrhmrc.sweetdialoglib.DialogButtonListener;
 import com.emrhmrc.sweetdialoglib.DialogCreater;
 import com.emrhmrc.sweetdialoglib.SweetAlertDialog;
-
-import static java.lang.Thread.sleep;
 
 public class MainActivity extends AppCompatActivity implements DialogButtonListener, View.OnClickListener {
 
@@ -55,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements DialogButtonListe
     }
 
     public void Loading(View v) {
-        SweetAlertDialog loadingDialog = DialogCreater.loadingDialog(this,true);
+        SweetAlertDialog loadingDialog = DialogCreater.loadingDialog(this, true);
         loadingDialog.showCancelButton(true);
         Handler handler = new Handler(Looper.getMainLooper());
         handler.postDelayed(new Runnable() {
@@ -64,11 +63,7 @@ public class MainActivity extends AppCompatActivity implements DialogButtonListe
                 loadingDialog.dismissWithAnimation();
                 DialogCreater.doneDialog(MainActivity.this);
             }
-        }, 3000 );
-
-
-
-
+        }, 3000);
 
 
     }
