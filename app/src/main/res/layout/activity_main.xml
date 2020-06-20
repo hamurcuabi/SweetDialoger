@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,10 +25,10 @@
                 android:layout_height="wrap_content"
                 android:text="Succes" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:onClick="Succes"
                 android:id="@+id/btnSucces"
-                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="Try me!" />
@@ -49,10 +48,10 @@
                 android:layout_height="wrap_content"
                 android:text="Error" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:onClick="Error"
                 android:id="@+id/btnError"
-                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="Try me!" />
@@ -78,10 +77,10 @@
                 android:layout_height="wrap_content"
                 android:text="Warning" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:onClick="Warning"
                 android:id="@+id/btnWarning"
-                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="Try me!" />
@@ -101,10 +100,10 @@
                 android:layout_height="wrap_content"
                 android:text="Basic" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:onClick="Basic"
                 android:id="@+id/btnBasic"
-                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="Try me!" />
@@ -130,10 +129,10 @@
                 android:layout_height="wrap_content"
                 android:text="Question" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:onClick="Question"
                 android:id="@+id/btnQuestion"
-                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="Try me!" />
@@ -153,10 +152,10 @@
                 android:layout_height="wrap_content"
                 android:text="Loading" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:onClick="Loading"
                 android:id="@+id/btnLoading"
-                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="Try me!" />
@@ -182,9 +181,9 @@
                 android:layout_height="wrap_content"
                 android:text="Done" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnDone"
-                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="Try me!" />
@@ -204,9 +203,9 @@
                 android:layout_height="wrap_content"
                 android:text="Fail" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnFail"
-                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="Try me!" />
@@ -232,10 +231,10 @@
                 android:layout_height="wrap_content"
                 android:text="Change Done or Fail" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:onClick="ChangeDone"
                 android:id="@+id/btnChangeDone"
-                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="Try me!" />
@@ -255,10 +254,10 @@
                 android:layout_height="wrap_content"
                 android:text="Cahnge Fail" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:onClick="ChangeFail"
                 android:id="@+id/btnChangeFail"
-                style="@style/dialog_blue_button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="Try me!" />

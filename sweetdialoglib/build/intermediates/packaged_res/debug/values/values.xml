@@ -31,13 +31,19 @@
     <dimen name="progres_height_parent">14dp</dimen>
     <dimen name="progres_padding">2dp</dimen>
     <dimen name="progress_circle_radius">34dp</dimen>
-    <string name="LOADING">Loading...</string>
     <string name="app_name">SweetDialogLib</string>
     <string name="dialog_cancel">Cancel</string>
     <string name="dialog_default_title">Here\'s a message!</string>
     <string name="dialog_ok">OK</string>
-    <string name="succes">Başarılı</string>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <string name="fail">Fail</string>
+    <string name="info">İnformation</string>
+    <string name="loading">Loading...</string>
+    <string name="no">No</string>
+    <string name="ok">Ok</string>
+    <string name="succes">Succes</string>
+    <string name="sure">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -53,13 +59,10 @@
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:backgroundDimAmount">0.4</item>
     </style>
-    <style name="dialog_blue_button" parent="android:Widget.Button">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">31dp</item>
+    <style name="dialog_blue_button" parent="Widget.MaterialComponents.Button">
         <item name="android:background">@drawable/blue_button_background</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:paddingLeft">21dp</item>
-        <item name="android:paddingRight">21dp</item>
+        <item name="android:padding">8dp</item>
         <item name="android:textColor">@color/button_text_color</item>
     </style>
     <declare-styleable name="ProgressWheel">
