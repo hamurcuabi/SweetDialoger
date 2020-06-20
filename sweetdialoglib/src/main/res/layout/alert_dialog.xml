@@ -148,6 +148,8 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/cancel_button"
             style="@style/dialog_blue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
             android:background="@drawable/gray_button_background"
             android:text="@string/dialog_cancel"
@@ -156,6 +158,8 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/confirm_button"
             style="@style/dialog_blue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/dialog_ok" />
     </LinearLayout>
 </LinearLayout>
